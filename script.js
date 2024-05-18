@@ -1,9 +1,9 @@
 //your JS code here. If required.
 let submit = document.getElementById("submit")
 let inputs = document.querySelectorAll("input")
-let message = document.querySelector(".message")
+let message = document.querySelector(".boxcontainer")
 let form = document.querySelector('form')
-let heading = document.querySelector("h3")
+let heading = document.querySelector(".message")
 
 let box = document.querySelectorAll(".box")
 
@@ -13,7 +13,7 @@ submit.addEventListener("click",(event_details)=>{
         form.classList.add("dis")
         message.classList.remove("dis")
 
-        heading.innerText = `${inputs[0].value}.You are up`
+        heading.innerText = `${inputs[0].value}, you're up`
         let count = 0
         let val = true;
         let game = true;
@@ -34,10 +34,10 @@ submit.addEventListener("click",(event_details)=>{
                     if(checkForWin()){
 
                         if(count%2==0){
-                            heading.innerText = `${inputs[1].value}.Won`
+                            heading.innerText = `${inputs[1].value}, congratulations you won!`
                         }
                         else{
-                            heading.innerText = `${inputs[0].value}.Won`
+                            heading.innerText = `${inputs[0].value}, congratulations you won!`
                         }
                         game=false;
 
@@ -47,10 +47,10 @@ submit.addEventListener("click",(event_details)=>{
                             heading.innerText = `Game Over`
                         }
                         else if(count%2==0){
-                            heading.innerText = `${inputs[0].value}.You are up`
+                            heading.innerText = `${inputs[0].value}, you're up`
                         }
                         else{
-                            heading.innerText = `${inputs[1].value}.You are up`
+                            heading.innerText = `${inputs[1].value}, you're up`
                         }
 
                     }

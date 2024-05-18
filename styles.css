@@ -27,3 +27,8 @@
 .won{
     background-color: #800080;
 }
+.message{
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+}
