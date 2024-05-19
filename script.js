@@ -13,7 +13,7 @@ submit.addEventListener("click",(event_details)=>{
         form.classList.add("dis")
         message.classList.remove("dis")
 
-        heading.innerText = `${inputs[0].value}, you're up`
+        //heading.innerText = `${inputs[0].value}, you're up`
         let count = 0
         let val = true;
         let game = true;
