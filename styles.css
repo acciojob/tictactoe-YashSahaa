@@ -1,34 +1,72 @@
-/*  your css code here. If applicable */
-
-.container{
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-top: 40px;
     text-align: center;
 }
-.boxes{
-    
-    margin-right: auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+#input-cont {
+    margin: 30px 10px;
+    text-align: center;
 }
-.box{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    background-color: #ffc0cb;
+#input-cont > label, #input-cont > input, #input-cont > button {
+    margin: 10px 5px;
+    width: 200px;
+    height: 30px;
+    border-radius: 2px;
+}
+#input-cont > button {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #2294ED;
+    color: white;
+    width: 250px;
+}
+#input-cont > input {
+    text-indent: 10px;
+}
+
+
+/* Grid-Container */
+#grid-cont {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 10px;
+}
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 350px;
+    height: 350px;
+    border: solid black 1.5px;
+}
+.game-grid > div {
+    border: solid black 1.5px;
+    background-color: #FFC0CB;
     font-size: 50px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.dis{
-    display: none;
+.btn-cont {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
 }
-.won{
-    background-color: #800080;
+.btn-cont > button {
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2294ED;
+    color: white;
+    width: 100px;
 }
-.message{
-    font-size: large;
-    font-weight: bold;
-    margin: 10px;
+.btn-cont button:first-child {
+    background-color: red;
+}
+.btn-cont button:last-child {
+    background-color: rgb(37, 211, 37);
 }
